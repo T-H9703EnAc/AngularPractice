@@ -1,0 +1,11 @@
+version: "3.6"
+services:
+  angular:
+    container_name: angular
+    build: ./angular
+    ports:
+      - 4200:4200
+    volumes:
+      - ./angular/angular_project:/app:cached
+    tty: true
+    stdin_open: true
