@@ -20,11 +20,6 @@ ng new "APP NAME"
 ```
 
 ```
-git config --global user.name T-H9703EnAc
-git config --global user.email t.h.1997.m.engineer.ac@gmail.com
-```
-
-```
 docker exec -it angular /bin/bash
 ```
 
