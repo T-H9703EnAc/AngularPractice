@@ -35,5 +35,8 @@ npm run start -- --host 0.0.0.0
 http://localhost:4200/
 
 ```
-ng generate component "Component Name"
+ng generate component "Component Name(複数系)"
+ng generate service "Service Name(単数系)"
+ng generate module "Module Name" --flat(ディレクトリを作らない) --module=app(ファイル名を指定)
+ng generate module app-routing --flat --module=app
 ```
