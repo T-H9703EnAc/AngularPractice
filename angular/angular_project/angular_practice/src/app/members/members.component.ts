@@ -10,20 +10,12 @@ import { MessageService } from '../message.service';
 })
 export class MembersComponent implements OnInit {
   members!:Member[];
-  // selectedMemberだとNullを許容しない selectedMember!だとNullを許容する
-  selectedMember!: Member;
   
   constructor(
-    private memberService: MemberService,
-    private messageService: MessageService,   
-    ) {}
+    private memberService: MemberService) {}
   
   ngOnInit(): void {
     this.getMember();
-  }
-  onSelect(member: Member):void{
-    this.selectedMember = member;
-    this.messageService.add(`MemberComponent: 社員データ(id=${member.id}が選択されました。)`)
   }
   getMember():void{
     this.memberService.getMembers()
