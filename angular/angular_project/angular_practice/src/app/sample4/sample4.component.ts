@@ -28,4 +28,8 @@ export class Sample4Component implements OnInit {
     this.aliases.push(this.fb.control(''));
   }
 
+  getData(){
+    console.log(this.profileForm.value);
+  }
+
 }
