@@ -10,14 +10,6 @@ import { FormArray } from '@angular/forms';
 export class Sample4Component implements OnInit {
 
   profileForm = this.fb.group({
-    firstName: [''],
-    lastName: [''],
-    address: this.fb.group({
-      street: [''],
-      city: [''],
-      state: [''],
-      zip: ['']
-    }),
     aliases: this.fb.array([
       this.fb.control('')
     ])

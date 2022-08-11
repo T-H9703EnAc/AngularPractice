@@ -5,9 +5,9 @@
         <button type="button" (click)="addAlias()">+ Add another alias</button>
     
         <div *ngFor="let alias of aliases.controls; let i=index">
-        <!-- The repeated alias template -->
-        <label for="alias-{{ i }}">Alias:</label>
-        <input id="alias-{{ i }}" type="text" [formControlName]="i">
+            <!-- The repeated alias template -->
+            <label for="alias-{{ i }}">Alias:</label>
+            <input id="alias-{{ i }}" type="text" [formControlName]="i">
         </div>
     </div>
 </div>
